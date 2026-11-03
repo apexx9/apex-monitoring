@@ -1,0 +1,9 @@
+/build/
+/out/
+/.cache/
+*.user
+*.user.*
+*.qmlc
+*.jsc
+.DS_Store
+Thumbs.db
