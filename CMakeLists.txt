@@ -31,6 +31,3 @@ target_link_libraries(apex-monitor PRIVATE
     Qt6::QuickControls2
 )
 
-if(WIN32)
-    set_target_properties(apex-monitor PROPERTIES WIN32_EXECUTABLE TRUE)
-endif()
