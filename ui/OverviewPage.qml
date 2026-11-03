@@ -49,8 +49,15 @@ Item {
                         id: statusRow
                         anchors.centerIn: parent
                         spacing: 8
-                        Rectangle { width: 7; height: 7; radius: 4; color: Theme.warning }
-                        Text { text: "DEMO DATA"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono"; font.weight: Font.DemiBold }
+                        Rectangle { width: 7
+                        height: 7
+                        radius: 4
+                        color: Theme.warning }
+                        Text { text: "DEMO DATA"
+                        color: Theme.muted
+                        font.pixelSize: 10
+                        font.family: "Cascadia Mono"
+                        font.weight: Font.DemiBold }
                     }
                 }
             }
@@ -79,35 +86,61 @@ Item {
                                 font.letterSpacing: -0.8
                                 Layout.fillWidth: true
                             }
-                            Text { text: "●"; color: Theme.accent; font.pixelSize: 12 }
+                            Text { text: "●"
+                            color: Theme.accent
+                            font.pixelSize: 12 }
                         }
-                        Text { text: "ESP32 development board"; color: Theme.muted; font.pixelSize: 13 }
+                        Text { text: "ESP32 development board"
+                        color: Theme.muted
+                        font.pixelSize: 13 }
                         Item { Layout.fillHeight: true }
                         RowLayout {
                             Layout.fillWidth: true
                             spacing: 22
                             ColumnLayout {
                                 spacing: 2
-                                Text { text: "98.6%"; color: Theme.foreground; font.pixelSize: 34; font.family: "Cascadia Mono"; font.weight: Font.DemiBold }
-                                Text { text: "UPTIME · SIMULATED"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                                Text { text: "98.6%"
+                                color: Theme.foreground
+                                font.pixelSize: 34
+                                font.family: "Cascadia Mono"
+                                font.weight: Font.DemiBold }
+                                Text { text: "UPTIME · SIMULATED"
+                                color: Theme.muted
+                                font.pixelSize: 9
+                                font.family: "Cascadia Mono" }
                             }
-                            Rectangle { width: 1; height: 42; color: Theme.border }
+                            Rectangle { width: 1
+                            height: 42
+                            color: Theme.border }
                             ColumnLayout {
                                 spacing: 2
-                                Text { text: "4"; color: Theme.foreground; font.pixelSize: 25; font.family: "Cascadia Mono" }
-                                Text { text: "ACTIVE CHANNELS"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                                Text { text: "4"
+                                color: Theme.foreground
+                                font.pixelSize: 25
+                                font.family: "Cascadia Mono" }
+                                Text { text: "ACTIVE CHANNELS"
+                                color: Theme.muted
+                                font.pixelSize: 9
+                                font.family: "Cascadia Mono" }
                             }
                             ColumnLayout {
                                 spacing: 2
-                                Text { text: "0"; color: Theme.foreground; font.pixelSize: 25; font.family: "Cascadia Mono" }
-                                Text { text: "CRITICAL ALERTS"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                                Text { text: "0"
+                                color: Theme.foreground
+                                font.pixelSize: 25
+                                font.family: "Cascadia Mono" }
+                                Text { text: "CRITICAL ALERTS"
+                                color: Theme.muted
+                                font.pixelSize: 9
+                                font.family: "Cascadia Mono" }
                             }
                         }
                     }
                     Rectangle {
                         anchors.right: parent.right
                         anchors.bottom: parent.bottom
-                        width: 150; height: 92
+                        width: 150
+                        height: 92
                         color: "transparent"
                         Canvas {
                             anchors.fill: parent
@@ -135,18 +168,60 @@ Item {
                         spacing: 12
                         RowLayout {
                             Layout.fillWidth: true
-                            Rectangle { width: 34; height: 34; radius: 11; color: Theme.surfaceRaised; Text { anchors.centerIn: parent; text: "MCU"; color: Theme.accent; font.pixelSize: 9; font.family: "Cascadia Mono"; font.bold: true } }
-                            ColumnLayout { Layout.fillWidth: true; spacing: 2; Text { text: "ESP32"; color: Theme.foreground; font.pixelSize: 13; font.weight: Font.Medium }; Text { text: "ESP-32D · COM11"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" } }
-                            Text { text: "●"; color: Theme.warning; font.pixelSize: 10 }
+                            Rectangle { width: 34
+                            height: 34
+                            radius: 11
+                            color: Theme.surfaceRaised
+                            Text { anchors.centerIn: parent
+                            text: "MCU"
+                            color: Theme.accent
+                            font.pixelSize: 9
+                            font.family: "Cascadia Mono"
+                            font.bold: true } }
+                            ColumnLayout { Layout.fillWidth: true
+                            spacing: 2
+                            Text { text: "ESP32"
+                            color: Theme.foreground
+                            font.pixelSize: 13
+                            font.weight: Font.Medium }
+                            Text { text: "ESP-32D · COM11"
+                            color: Theme.muted
+                            font.pixelSize: 10
+                            font.family: "Cascadia Mono" } }
+                            Text { text: "●"
+                            color: Theme.warning
+                            font.pixelSize: 10 }
                         }
-                        Rectangle { Layout.fillWidth: true; height: 1; color: Theme.border }
+                        Rectangle { Layout.fillWidth: true
+                        height: 1
+                        color: Theme.border }
                         RowLayout {
                             Layout.fillWidth: true
-                            Rectangle { width: 34; height: 34; radius: 11; color: Theme.surfaceRaised; Text { anchors.centerIn: parent; text: "UART"; color: Theme.accent2; font.pixelSize: 9; font.family: "Cascadia Mono"; font.bold: true } }
-                            ColumnLayout { Layout.fillWidth: true; spacing: 2; Text { text: "Serial interface"; color: Theme.foreground; font.pixelSize: 13 }; Text { text: "115200 baud · 8N1"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" } }
+                            Rectangle { width: 34
+                            height: 34
+                            radius: 11
+                            color: Theme.surfaceRaised
+                            Text { anchors.centerIn: parent
+                            text: "UART"
+                            color: Theme.accent2
+                            font.pixelSize: 9
+                            font.family: "Cascadia Mono"
+                            font.bold: true } }
+                            ColumnLayout { Layout.fillWidth: true
+                            spacing: 2
+                            Text { text: "Serial interface"
+                            color: Theme.foreground
+                            font.pixelSize: 13 }
+                            Text { text: "115200 baud · 8N1"
+                            color: Theme.muted
+                            font.pixelSize: 10
+                            font.family: "Cascadia Mono" } }
                         }
                         Item { Layout.fillHeight: true }
-                        Text { text: "NOT CONNECTED · EXAMPLE CONFIG"; color: Theme.warning; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                        Text { text: "NOT CONNECTED · EXAMPLE CONFIG"
+                        color: Theme.warning
+                        font.pixelSize: 9
+                        font.family: "Cascadia Mono" }
                     }
                 }
 
@@ -159,19 +234,54 @@ Item {
                         spacing: 8
                         RowLayout {
                             Layout.fillWidth: true
-                            Text { text: "42"; color: Theme.foreground; font.pixelSize: 42; font.family: "Cascadia Mono"; font.weight: Font.DemiBold }
-                            Text { text: "%"; color: Theme.muted; font.pixelSize: 19; font.family: "Cascadia Mono"; Layout.alignment: Qt.AlignBottom }
+                            Text { text: "42"
+                            color: Theme.foreground
+                            font.pixelSize: 42
+                            font.family: "Cascadia Mono"
+                            font.weight: Font.DemiBold }
+                            Text { text: "%"
+                            color: Theme.muted
+                            font.pixelSize: 19
+                            font.family: "Cascadia Mono"
+                            Layout.alignment: Qt.AlignBottom }
                             Item { Layout.fillWidth: true }
-                            Text { text: "CPU"; color: Theme.muted; font.pixelSize: 11; font.family: "Cascadia Mono" }
+                            Text { text: "CPU"
+                            color: Theme.muted
+                            font.pixelSize: 11
+                            font.family: "Cascadia Mono" }
                         }
                         Rectangle {
-                            Layout.fillWidth: true; height: 9; radius: 5; color: Theme.surfaceRaised
-                            Rectangle { width: parent.width * 0.42; height: parent.height; radius: 5; color: Theme.accent }
+                            Layout.fillWidth: true
+                            height: 9
+                            radius: 5
+                            color: Theme.surfaceRaised
+                            Rectangle { width: parent.width * 0.42
+                            height: parent.height
+                            radius: 5
+                            color: Theme.accent }
                         }
-                        RowLayout { Layout.fillWidth: true; Text { text: "Memory"; color: Theme.muted; font.pixelSize: 11 }; Item { Layout.fillWidth: true }; Text { text: "61%"; color: Theme.foreground; font.pixelSize: 11; font.family: "Cascadia Mono" } }
-                        Rectangle { Layout.fillWidth: true; height: 5; radius: 3; color: Theme.surfaceRaised; Rectangle { width: parent.width * 0.61; height: parent.height; radius: 3; color: Theme.accent2 } }
+                        RowLayout { Layout.fillWidth: true
+                        Text { text: "Memory"
+                        color: Theme.muted
+                        font.pixelSize: 11 }
+                        Item { Layout.fillWidth: true }
+                        Text { text: "61%"
+                        color: Theme.foreground
+                        font.pixelSize: 11
+                        font.family: "Cascadia Mono" } }
+                        Rectangle { Layout.fillWidth: true
+                        height: 5
+                        radius: 3
+                        color: Theme.surfaceRaised
+                        Rectangle { width: parent.width * 0.61
+                        height: parent.height
+                        radius: 3
+                        color: Theme.accent2 } }
                         Item { Layout.fillHeight: true }
-                        Text { text: "SIMULATED TELEMETRY"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                        Text { text: "SIMULATED TELEMETRY"
+                        color: Theme.muted
+                        font.pixelSize: 9
+                        font.family: "Cascadia Mono" }
                     }
                 }
 
@@ -185,7 +295,16 @@ Item {
                         Layout.fillWidth: true
                         RowLayout {
                             Layout.fillWidth: true
-                            ColumnLayout { Layout.fillWidth: true; spacing: 3; Text { text: "Signal activity"; color: Theme.foreground; font.pixelSize: 23; font.weight: Font.DemiBold }; Text { text: "ADC · GPIO 34"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" } }
+                            ColumnLayout { Layout.fillWidth: true
+                            spacing: 3
+                            Text { text: "Signal activity"
+                            color: Theme.foreground
+                            font.pixelSize: 23
+                            font.weight: Font.DemiBold }
+                            Text { text: "ADC · GPIO 34"
+                            color: Theme.muted
+                            font.pixelSize: 10
+                            font.family: "Cascadia Mono" } }
                             RowLayout {
                                 spacing: 2
                                 Repeater {
@@ -195,20 +314,37 @@ Item {
                                         color: root.selectedRange === modelData ? Theme.foreground : "transparent"
                                         implicitWidth: rangeText.implicitWidth + 15
                                         implicitHeight: 26
-                                        Text { id: rangeText; anchors.centerIn: parent; text: modelData; color: root.selectedRange === modelData ? Theme.background : Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
-                                        MouseArea { anchors.fill: parent; onClicked: root.selectedRange = modelData }
+                                        Text { id: rangeText
+                                        anchors.centerIn: parent
+                                        text: modelData
+                                        color: root.selectedRange === modelData ? Theme.background : Theme.muted
+                                        font.pixelSize: 9
+                                        font.family: "Cascadia Mono" }
+                                        MouseArea { anchors.fill: parent
+                                        onClicked: root.selectedRange = modelData }
                                     }
                                 }
                             }
                         }
-                        TelemetryChart { Layout.fillWidth: true; Layout.fillHeight: true; Layout.topMargin: 8 }
+                        TelemetryChart { Layout.fillWidth: true
+                        Layout.fillHeight: true
+                        Layout.topMargin: 8 }
                         RowLayout {
                             Layout.fillWidth: true
-                            Text { text: "0.0"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                            Text { text: "0.0"
+                            color: Theme.muted
+                            font.pixelSize: 9
+                            font.family: "Cascadia Mono" }
                             Item { Layout.fillWidth: true }
-                            Text { text: "1.2"; color: Theme.accent; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                            Text { text: "1.2"
+                            color: Theme.accent
+                            font.pixelSize: 9
+                            font.family: "Cascadia Mono" }
                             Item { Layout.fillWidth: true }
-                            Text { text: "2.4"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                            Text { text: "2.4"
+                            color: Theme.muted
+                            font.pixelSize: 9
+                            font.family: "Cascadia Mono" }
                         }
                     }
                 }
@@ -220,25 +356,45 @@ Item {
                     ColumnLayout {
                         Layout.fillWidth: true
                         spacing: 10
-                        Text { text: "Peripheral usage"; color: Theme.foreground; font.pixelSize: 22; font.family: "Cascadia Mono"; font.weight: Font.DemiBold }
+                        Text { text: "Peripheral usage"
+                        color: Theme.foreground
+                        font.pixelSize: 22
+                        font.family: "Cascadia Mono"
+                        font.weight: Font.DemiBold }
                         RowLayout {
-                            Layout.fillWidth: true; spacing: 3
+                            Layout.fillWidth: true
+                            spacing: 3
                             Repeater {
                                 model: [{v:34,c:Theme.accent},{v:26,c:Theme.accent2},{v:18,c:"#777D72"},{v:12,c:"#555B51"},{v:10,c:"#3D433B"}]
-                                delegate: Rectangle { Layout.fillWidth: modelData.v; height: 31; radius: 7; color: modelData.c }
+                                delegate: Rectangle { Layout.fillWidth: modelData.v
+                                height: 31
+                                radius: 7
+                                color: modelData.c }
                             }
                         }
                         Repeater {
                             model: [{n:"GPIO",v:"34%",c:Theme.accent},{n:"ADC",v:"26%",c:Theme.accent2},{n:"UART",v:"18%",c:"#777D72"},{n:"PWM",v:"12%",c:"#555B51"}]
                             delegate: RowLayout {
                                 Layout.fillWidth: true
-                                Rectangle { width: 7; height: 7; radius: 4; color: modelData.c }
-                                Text { text: modelData.n; color: Theme.muted; font.pixelSize: 11; Layout.fillWidth: true }
-                                Text { text: modelData.v; color: Theme.foreground; font.pixelSize: 11; font.family: "Cascadia Mono" }
+                                Rectangle { width: 7
+                                height: 7
+                                radius: 4
+                                color: modelData.c }
+                                Text { text: modelData.n
+                                color: Theme.muted
+                                font.pixelSize: 11
+                                Layout.fillWidth: true }
+                                Text { text: modelData.v
+                                color: Theme.foreground
+                                font.pixelSize: 11
+                                font.family: "Cascadia Mono" }
                             }
                         }
                         Item { Layout.fillHeight: true }
-                        Text { text: "EXAMPLE CHANNEL DISTRIBUTION"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                        Text { text: "EXAMPLE CHANNEL DISTRIBUTION"
+                        color: Theme.muted
+                        font.pixelSize: 9
+                        font.family: "Cascadia Mono" }
                     }
                 }
 
@@ -249,17 +405,67 @@ Item {
                     ColumnLayout {
                         Layout.fillWidth: true
                         spacing: 9
-                        Text { text: "PID response"; color: Theme.foreground; font.pixelSize: 22; font.weight: Font.DemiBold }
+                        Text { text: "PID response"
+                        color: Theme.foreground
+                        font.pixelSize: 22
+                        font.weight: Font.DemiBold }
                         RowLayout {
                             Layout.fillWidth: true
-                            ColumnLayout { Layout.fillWidth: true; spacing: 2; Text { text: "0.024"; color: Theme.foreground; font.pixelSize: 24; font.family: "Cascadia Mono" }; Text { text: "SETTLING ERROR"; color: Theme.muted; font.pixelSize: 8; font.family: "Cascadia Mono" } }
-                            ColumnLayout { Layout.fillWidth: true; spacing: 2; Text { text: "118"; color: Theme.foreground; font.pixelSize: 24; font.family: "Cascadia Mono" }; Text { text: "RPM"; color: Theme.muted; font.pixelSize: 8; font.family: "Cascadia Mono" } }
+                            ColumnLayout { Layout.fillWidth: true
+                            spacing: 2
+                            Text { text: "0.024"
+                            color: Theme.foreground
+                            font.pixelSize: 24
+                            font.family: "Cascadia Mono" }
+                            Text { text: "SETTLING ERROR"
+                            color: Theme.muted
+                            font.pixelSize: 8
+                            font.family: "Cascadia Mono" } }
+                            ColumnLayout { Layout.fillWidth: true
+                            spacing: 2
+                            Text { text: "118"
+                            color: Theme.foreground
+                            font.pixelSize: 24
+                            font.family: "Cascadia Mono" }
+                            Text { text: "RPM"
+                            color: Theme.muted
+                            font.pixelSize: 8
+                            font.family: "Cascadia Mono" } }
                         }
-                        Rectangle { Layout.fillWidth: true; height: 1; color: Theme.border }
-                        RowLayout { Layout.fillWidth: true; Text { text: "Kp"; color: Theme.muted; font.pixelSize: 11 }; Item { Layout.fillWidth: true }; Text { text: "1.20"; color: Theme.foreground; font.pixelSize: 11; font.family: "Cascadia Mono" } }
-                        RowLayout { Layout.fillWidth: true; Text { text: "Ki"; color: Theme.muted; font.pixelSize: 11 }; Item { Layout.fillWidth: true }; Text { text: "0.08"; color: Theme.foreground; font.pixelSize: 11; font.family: "Cascadia Mono" } }
-                        RowLayout { Layout.fillWidth: true; Text { text: "Kd"; color: Theme.muted; font.pixelSize: 11 }; Item { Layout.fillWidth: true }; Text { text: "0.02"; color: Theme.foreground; font.pixelSize: 11; font.family: "Cascadia Mono" } }
-                        Text { text: "SIMULATED CONTROLLER VALUES"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                        Rectangle { Layout.fillWidth: true
+                        height: 1
+                        color: Theme.border }
+                        RowLayout { Layout.fillWidth: true
+                        Text { text: "Kp"
+                        color: Theme.muted
+                        font.pixelSize: 11 }
+                        Item { Layout.fillWidth: true }
+                        Text { text: "1.20"
+                        color: Theme.foreground
+                        font.pixelSize: 11
+                        font.family: "Cascadia Mono" } }
+                        RowLayout { Layout.fillWidth: true
+                        Text { text: "Ki"
+                        color: Theme.muted
+                        font.pixelSize: 11 }
+                        Item { Layout.fillWidth: true }
+                        Text { text: "0.08"
+                        color: Theme.foreground
+                        font.pixelSize: 11
+                        font.family: "Cascadia Mono" } }
+                        RowLayout { Layout.fillWidth: true
+                        Text { text: "Kd"
+                        color: Theme.muted
+                        font.pixelSize: 11 }
+                        Item { Layout.fillWidth: true }
+                        Text { text: "0.02"
+                        color: Theme.foreground
+                        font.pixelSize: 11
+                        font.family: "Cascadia Mono" } }
+                        Text { text: "SIMULATED CONTROLLER VALUES"
+                        color: Theme.muted
+                        font.pixelSize: 9
+                        font.family: "Cascadia Mono" }
                     }
                 }
 
@@ -270,16 +476,58 @@ Item {
                     ColumnLayout {
                         Layout.fillWidth: true
                         spacing: 12
-                        Text { text: "Motor temperature"; color: Theme.foreground; font.pixelSize: 20; font.weight: Font.DemiBold }
-                        RowLayout { Layout.fillWidth: true; Text { text: "42.8"; color: Theme.foreground; font.pixelSize: 33; font.family: "Cascadia Mono"; font.weight: Font.DemiBold }; Text { text: "°C"; color: Theme.muted; font.pixelSize: 15; Layout.alignment: Qt.AlignBottom }; Item { Layout.fillWidth: true }; Text { text: "NORMAL"; color: Theme.accent; font.pixelSize: 9; font.family: "Cascadia Mono" } }
+                        Text { text: "Motor temperature"
+                        color: Theme.foreground
+                        font.pixelSize: 20
+                        font.weight: Font.DemiBold }
+                        RowLayout { Layout.fillWidth: true
+                        Text { text: "42.8"
+                        color: Theme.foreground
+                        font.pixelSize: 33
+                        font.family: "Cascadia Mono"
+                        font.weight: Font.DemiBold }
+                        Text { text: "°C"
+                        color: Theme.muted
+                        font.pixelSize: 15
+                        Layout.alignment: Qt.AlignBottom }
+                        Item { Layout.fillWidth: true }
+                        Text { text: "NORMAL"
+                        color: Theme.accent
+                        font.pixelSize: 9
+                        font.family: "Cascadia Mono" } }
                         Rectangle {
-                            Layout.fillWidth: true; height: 38; radius: 10; color: Theme.surfaceRaised
-                            Rectangle { x: parent.width * 0.2; width: parent.width * 0.6; height: parent.height; radius: 10; color: Theme.accent; opacity: 0.14 }
-                            Rectangle { x: parent.width * 0.57; width: 3; height: parent.height + 8; y: -4; radius: 2; color: Theme.foreground }
+                            Layout.fillWidth: true
+                            height: 38
+                            radius: 10
+                            color: Theme.surfaceRaised
+                            Rectangle { x: parent.width * 0.2
+                            width: parent.width * 0.6
+                            height: parent.height
+                            radius: 10
+                            color: Theme.accent
+                            opacity: 0.14 }
+                            Rectangle { x: parent.width * 0.57
+                            width: 3
+                            height: parent.height + 8
+                            y: -4
+                            radius: 2
+                            color: Theme.foreground }
                         }
-                        RowLayout { Layout.fillWidth: true; Text { text: "0°C"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" }; Item { Layout.fillWidth: true }; Text { text: "80°C limit"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" } }
+                        RowLayout { Layout.fillWidth: true
+                        Text { text: "0°C"
+                        color: Theme.muted
+                        font.pixelSize: 10
+                        font.family: "Cascadia Mono" }
+                        Item { Layout.fillWidth: true }
+                        Text { text: "80°C limit"
+                        color: Theme.muted
+                        font.pixelSize: 10
+                        font.family: "Cascadia Mono" } }
                         Item { Layout.fillHeight: true }
-                        Text { text: "THRESHOLD MONITOR · EXAMPLE"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                        Text { text: "THRESHOLD MONITOR · EXAMPLE"
+                        color: Theme.muted
+                        font.pixelSize: 9
+                        font.family: "Cascadia Mono" }
                     }
                 }
 
@@ -293,23 +541,50 @@ Item {
                         Layout.fillWidth: true
                         RowLayout {
                             Layout.fillWidth: true
-                            ColumnLayout { Layout.fillWidth: true; spacing: 2; Text { text: "Sample #024,190"; color: Theme.foreground; font.pixelSize: 21; font.family: "Cascadia Mono"; font.weight: Font.DemiBold }; Text { text: "ADC0 · 12-bit resolution"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" } }
-                            Text { text: "2.84 kHz"; color: Theme.accent; font.pixelSize: 11; font.family: "Cascadia Mono" }
+                            ColumnLayout { Layout.fillWidth: true
+                            spacing: 2
+                            Text { text: "Sample #024,190"
+                            color: Theme.foreground
+                            font.pixelSize: 21
+                            font.family: "Cascadia Mono"
+                            font.weight: Font.DemiBold }
+                            Text { text: "ADC0 · 12-bit resolution"
+                            color: Theme.muted
+                            font.pixelSize: 10
+                            font.family: "Cascadia Mono" } }
+                            Text { text: "2.84 kHz"
+                            color: Theme.accent
+                            font.pixelSize: 11
+                            font.family: "Cascadia Mono" }
                         }
                         Item { Layout.fillHeight: true }
                         RowLayout {
-                            Layout.fillWidth: true; spacing: 3
+                            Layout.fillWidth: true
+                            spacing: 3
                             Repeater {
                                 model: [22,31,26,39,45,36,52,43,60,48,57,68,54,73,62,80,69,75,58,84,72,91,78,86,66,95,82,88,74,97,84,90,71,83,68,92,77,86,74,94]
-                                delegate: Rectangle { Layout.fillWidth: true; Layout.alignment: Qt.AlignBottom; height: modelData * 0.58; radius: 2; color: index === 39 ? Theme.accent : Theme.muted; opacity: index === 39 ? 1 : 0.18 + index / 100 }
+                                delegate: Rectangle { Layout.fillWidth: true
+                                Layout.alignment: Qt.AlignBottom
+                                height: modelData * 0.58
+                                radius: 2
+                                color: index === 39 ? Theme.accent : Theme.muted
+                                opacity: index === 39 ? 1 : 0.18 + index / 100 }
                             }
                         }
-                        Rectangle { Layout.fillWidth: true; height: 1; color: Theme.border }
+                        Rectangle { Layout.fillWidth: true
+                        height: 1
+                        color: Theme.border }
                         RowLayout {
                             Layout.fillWidth: true
-                            Text { text: "Sample rate  2.84 kHz"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" }
+                            Text { text: "Sample rate  2.84 kHz"
+                            color: Theme.muted
+                            font.pixelSize: 10
+                            font.family: "Cascadia Mono" }
                             Item { Layout.fillWidth: true }
-                            Text { text: "Buffer  64%"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" }
+                            Text { text: "Buffer  64%"
+                            color: Theme.muted
+                            font.pixelSize: 10
+                            font.family: "Cascadia Mono" }
                         }
                     }
                 }
@@ -331,9 +606,28 @@ Item {
                             delegate: RowLayout {
                                 Layout.fillWidth: true
                                 spacing: 10
-                                Rectangle { width: 30; height: 30; radius: 10; color: Theme.surfaceRaised; Text { anchors.centerIn: parent; text: "↗"; color: modelData.c; font.pixelSize: 13 } }
-                                ColumnLayout { Layout.fillWidth: true; spacing: 2; Text { text: modelData.t; color: Theme.foreground; font.pixelSize: 11; font.weight: Font.Medium }; Text { text: modelData.d; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" } }
-                                Text { text: modelData.s; color: modelData.c; font.pixelSize: 9; font.family: "Cascadia Mono" }
+                                Rectangle { width: 30
+                                height: 30
+                                radius: 10
+                                color: Theme.surfaceRaised
+                                Text { anchors.centerIn: parent
+                                text: "↗"
+                                color: modelData.c
+                                font.pixelSize: 13 } }
+                                ColumnLayout { Layout.fillWidth: true
+                                spacing: 2
+                                Text { text: modelData.t
+                                color: Theme.foreground
+                                font.pixelSize: 11
+                                font.weight: Font.Medium }
+                                Text { text: modelData.d
+                                color: Theme.muted
+                                font.pixelSize: 9
+                                font.family: "Cascadia Mono" } }
+                                Text { text: modelData.s
+                                color: modelData.c
+                                font.pixelSize: 9
+                                font.family: "Cascadia Mono" }
                             }
                         }
                     }
@@ -342,3 +636,4 @@ Item {
         }
     }
 }
+
