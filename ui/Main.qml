@@ -35,23 +35,45 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     spacing: 10
                     Rectangle {
-                        width: 34; height: 34; radius: 11
+                        width: 34
+                        height: 34
+                        radius: 11
                         color: Theme.accent
-                        Text { anchors.centerIn: parent; text: "A"; color: "#20251B"; font.pixelSize: 19; font.weight: Font.Black }
+                        Text { anchors.centerIn: parent
+                        text: "A"
+                        color: "#20251B"
+                        font.pixelSize: 19
+                        font.weight: Font.Black }
                     }
                     ColumnLayout {
                         spacing: 1
-                        Text { text: "APEX"; color: Theme.foreground; font.pixelSize: 13; font.weight: Font.Bold; font.letterSpacing: 1.2 }
-                        Text { text: "MONITOR"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono"; font.letterSpacing: 1.1 }
+                        Text { text: "APEX"
+                        color: Theme.foreground
+                        font.pixelSize: 13
+                        font.weight: Font.Bold
+                        font.letterSpacing: 1.2 }
+                        Text { text: "MONITOR"
+                        color: Theme.muted
+                        font.pixelSize: 9
+                        font.family: "Cascadia Mono"
+                        font.letterSpacing: 1.1 }
                     }
                 }
 
-                Rectangle { Layout.fillWidth: true; height: 1; color: Theme.border }
+                Rectangle { Layout.fillWidth: true
+                height: 1
+                color: Theme.border }
 
                 ColumnLayout {
                     Layout.fillWidth: true
                     spacing: 5
-                    Text { text: "WORKSPACE"; color: Theme.quiet; font.pixelSize: 9; font.family: "Cascadia Mono"; font.weight: Font.DemiBold; leftPadding: 10; bottomPadding: 5 }
+                    Text { text: "WORKSPACE"
+                    color: Theme.quiet
+                    font.pixelSize: 9
+                    font.family: "Cascadia Mono"
+                    font.weight: Font.DemiBold
+                    leftPadding: 10
+                    bottomPadding: 5 }
                     Repeater {
                         model: [
                             {name:"Overview",glyph:"◫",active:true},
@@ -70,9 +92,21 @@ ApplicationWindow {
                                 anchors.leftMargin: 11
                                 anchors.rightMargin: 10
                                 spacing: 11
-                                Text { text: modelData.glyph; color: modelData.active ? Theme.accent : Theme.muted; font.pixelSize: 17; Layout.preferredWidth: 19; horizontalAlignment: Text.AlignHCenter }
-                                Text { text: modelData.name; color: modelData.active ? Theme.foreground : Theme.muted; font.pixelSize: 12; font.weight: modelData.active ? Font.DemiBold : Font.Normal; Layout.fillWidth: true }
-                                Rectangle { visible: modelData.active; width: 5; height: 5; radius: 3; color: Theme.accent }
+                                Text { text: modelData.glyph
+                                color: modelData.active ? Theme.accent : Theme.muted
+                                font.pixelSize: 17
+                                Layout.preferredWidth: 19
+                                horizontalAlignment: Text.AlignHCenter }
+                                Text { text: modelData.name
+                                color: modelData.active ? Theme.foreground : Theme.muted
+                                font.pixelSize: 12
+                                font.weight: modelData.active ? Font.DemiBold : Font.Normal
+                                Layout.fillWidth: true }
+                                Rectangle { visible: modelData.active
+                                width: 5
+                                height: 5
+                                radius: 3
+                                color: Theme.accent }
                             }
                         }
                     }
@@ -81,7 +115,13 @@ ApplicationWindow {
                 ColumnLayout {
                     Layout.fillWidth: true
                     spacing: 5
-                    Text { text: "SYSTEM"; color: Theme.quiet; font.pixelSize: 9; font.family: "Cascadia Mono"; font.weight: Font.DemiBold; leftPadding: 10; bottomPadding: 5 }
+                    Text { text: "SYSTEM"
+                    color: Theme.quiet
+                    font.pixelSize: 9
+                    font.family: "Cascadia Mono"
+                    font.weight: Font.DemiBold
+                    leftPadding: 10
+                    bottomPadding: 5 }
                     Repeater {
                         model: [
                             {name:"Diagnostics",glyph:"⌕"},
@@ -94,8 +134,15 @@ ApplicationWindow {
                             Layout.rightMargin: 10
                             height: 36
                             spacing: 11
-                            Text { text: modelData.glyph; color: Theme.muted; font.pixelSize: 16; Layout.preferredWidth: 19; horizontalAlignment: Text.AlignHCenter }
-                            Text { text: modelData.name; color: Theme.muted; font.pixelSize: 12; Layout.fillWidth: true }
+                            Text { text: modelData.glyph
+                            color: Theme.muted
+                            font.pixelSize: 16
+                            Layout.preferredWidth: 19
+                            horizontalAlignment: Text.AlignHCenter }
+                            Text { text: modelData.name
+                            color: Theme.muted
+                            font.pixelSize: 12
+                            Layout.fillWidth: true }
                         }
                     }
                 }
@@ -112,9 +159,29 @@ ApplicationWindow {
                         anchors.fill: parent
                         anchors.margins: 11
                         spacing: 9
-                        Rectangle { width: 30; height: 30; radius: 10; color: Theme.surfaceRaised; Text { anchors.centerIn: parent; text: "USB"; color: Theme.accent2; font.pixelSize: 8; font.family: "Cascadia Mono"; font.bold: true } }
-                        ColumnLayout { Layout.fillWidth: true; spacing: 2; Text { text: "No device connected"; color: Theme.foreground; font.pixelSize: 10; font.weight: Font.Medium }; Text { text: "Connect a board to begin"; color: Theme.muted; font.pixelSize: 9 } }
-                        Rectangle { width: 6; height: 6; radius: 3; color: Theme.warning }
+                        Rectangle { width: 30
+                        height: 30
+                        radius: 10
+                        color: Theme.surfaceRaised
+                        Text { anchors.centerIn: parent
+                        text: "USB"
+                        color: Theme.accent2
+                        font.pixelSize: 8
+                        font.family: "Cascadia Mono"
+                        font.bold: true } }
+                        ColumnLayout { Layout.fillWidth: true
+                        spacing: 2
+                        Text { text: "No device connected"
+                        color: Theme.foreground
+                        font.pixelSize: 10
+                        font.weight: Font.Medium }
+                        Text { text: "Connect a board to begin"
+                        color: Theme.muted
+                        font.pixelSize: 9 } }
+                        Rectangle { width: 6
+                        height: 6
+                        radius: 3
+                        color: Theme.warning }
                     }
                 }
             }
@@ -133,13 +200,28 @@ ApplicationWindow {
                     anchors.fill: parent
                     anchors.leftMargin: 26
                     anchors.rightMargin: 28
-                    Text { text: "Workspace"; color: Theme.muted; font.pixelSize: 11 }
-                    Text { text: "/"; color: Theme.quiet; font.pixelSize: 11 }
-                    Text { text: "Overview"; color: Theme.foreground; font.pixelSize: 11; font.weight: Font.Medium }
+                    Text { text: "Workspace"
+                    color: Theme.muted
+                    font.pixelSize: 11 }
+                    Text { text: "/"
+                    color: Theme.quiet
+                    font.pixelSize: 11 }
+                    Text { text: "Overview"
+                    color: Theme.foreground
+                    font.pixelSize: 11
+                    font.weight: Font.Medium }
                     Item { Layout.fillWidth: true }
-                    Text { text: "LOCAL SESSION"; color: Theme.muted; font.pixelSize: 9; font.family: "Cascadia Mono" }
-                    Rectangle { width: 1; height: 18; color: Theme.border }
-                    Text { text: "v0.1.0"; color: Theme.muted; font.pixelSize: 10; font.family: "Cascadia Mono" }
+                    Text { text: "LOCAL SESSION"
+                    color: Theme.muted
+                    font.pixelSize: 9
+                    font.family: "Cascadia Mono" }
+                    Rectangle { width: 1
+                    height: 18
+                    color: Theme.border }
+                    Text { text: "v0.1.0"
+                    color: Theme.muted
+                    font.pixelSize: 10
+                    font.family: "Cascadia Mono" }
                 }
             }
 
@@ -154,3 +236,4 @@ ApplicationWindow {
         }
     }
 }
+
